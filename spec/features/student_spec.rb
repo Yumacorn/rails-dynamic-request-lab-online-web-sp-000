@@ -37,5 +37,6 @@ describe 'Show page' do
   it 'renders the last name in a h1 tag' do
     visit "students/#{@student.id}"
     expect(page).to have_css("h1", text: "Targaryen")
+    raise error
   end
 end
